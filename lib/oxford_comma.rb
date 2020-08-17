@@ -1,7 +1,9 @@
 def oxford_comma(array)
   if array.length < 3 
-    array.join(" and ")
+    puts array.join(" and ")
   elsif 
-    array.join(", ")
+    zoidberg = array.last
+    array.pop
+    puts array.join(", ") + ", and #{zoidberg}"
   end 
 end
